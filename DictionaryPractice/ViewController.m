@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // Create own autorelease pool
+    @autoreleasepool {
+        
     // Create NSDictionary using literal declaratio
     NSDictionary *newDictionary = @{@"E": @"Value1",
                                     @"C": @"Value2",
@@ -91,6 +94,8 @@
         NSLog(@"Value was found");
     } else {
         NSLog(@"Value wasn't found");
+    }
+    
     }
     
 }
